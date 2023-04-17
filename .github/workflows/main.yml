@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@latest
         with:
           fetch-depth: 0
-      - uses: nrwl/nx-set-shas@latest
+      - uses: nrwl/nx-set-shas@v3
       - run: pwd
       - run: cd ./monorepo
       - run: npm ci
