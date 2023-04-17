@@ -10,10 +10,10 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@latest
         with:
           fetch-depth: 0
-      - uses: nrwl/nx-set-shas@v3
+      - uses: nrwl/nx-set-shas@latest
       - run: pwd
       - run: cd ./monorepo
       - run: npm ci
