@@ -32,4 +32,4 @@ jobs:
           pwd
           npm config set legacy-peer-deps true
           npm ci --force
-          npx nx affected --target=test --base=master --head=HEAD  -t test --parallel=3 --configuration=ci
+          npx nx affected --target=test --base=master~1 --head=master -t test --parallel=3 --configuration=ci
