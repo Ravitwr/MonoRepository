@@ -478,7 +478,7 @@ export function NxWelcome({ title }: { title: string }) {
                 </svg>
                 <span>
                   Documentation
-                  <span> Everything is in there </span>
+                  <span> Everything should in there </span>
                 </span>
                 <svg
                   fill="none"
