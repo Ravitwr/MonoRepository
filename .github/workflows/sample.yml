@@ -20,4 +20,4 @@ jobs:
           pwd
           npm config set legacy-peer-deps true
           npm ci --force
-          nx test express-app
+          npx nx test express-app
