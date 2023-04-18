@@ -18,5 +18,6 @@ jobs:
         run: |
           ls
           pwd
-          npm ci
+          npm config set legacy-peer-deps true
+          npm ci --force
           nx test express-app
