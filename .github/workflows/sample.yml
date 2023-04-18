@@ -18,3 +18,5 @@ jobs:
         run: |
           ls
           pwd
+          npm ci
+          nx test express-app
