@@ -1,0 +1,19 @@
+name: CI2
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.5.2
+        with:
+          fetch-depth: 0
+      - run: pwd
+      - run: cd ./monorepo
+      - run: pwd
+      - run: ls
