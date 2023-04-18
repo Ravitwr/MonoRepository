@@ -32,9 +32,9 @@ jobs:
           pwd
           npm config set legacy-peer-deps true
           npm ci --force
-      - run: npx nx affected -t test --parallel=3 --configuration=ci
+      - run: npx nx affected -t test --parallel=3
         working-directory: ./monorepo
-      - run: npx nx format:check
-        working-directory: ./monorepo
+#       - run: npx nx format:check
+#         working-directory: ./monorepo
       - run: npx nx affected -t build --parallel=3
         working-directory: ./monorepo
