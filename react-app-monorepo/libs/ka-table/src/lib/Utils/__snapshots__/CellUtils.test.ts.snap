@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CellUtils CellHandlers addItemToEditableCells 1`] = `
+Array [
+  Object {
+    "columnKey": "column",
+    "rowKeyValue": 1,
+  },
+  Object {
+    "columnKey": "column2",
+    "rowKeyValue": 2,
+  },
+]
+`;
+
+exports[`CellUtils CellHandlers removeItemFromEditableCells 1`] = `
+Array [
+  Object {
+    "columnKey": "column",
+    "rowKeyValue": 1,
+  },
+  Object {
+    "columnKey": "column",
+    "rowKeyValue": 2,
+  },
+]
+`;

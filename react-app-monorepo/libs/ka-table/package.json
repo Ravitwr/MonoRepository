@@ -1,0 +1,110 @@
+{
+  "name": "@pets-mono-repo/ka-table",
+  "version": "8.0.1",
+  "license": "MIT",
+  "repository": "github:komarovalexander/ka-table",
+  "homepage": "https://komarovalexander.github.io/ka-table/#/overview",
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.11.3",
+    "@mui/x-date-pickers": "^5.0.12",
+    "@types/enzyme": "^3.10.5",
+    "@types/react": "17.0.9",
+    "@types/react-csv": "^1.1.1",
+    "@types/react-redux": "^7.1.7",
+    "bootstrap": "^5.2.0",
+    "date-fns": "^2.29.3",
+    "jspdf": "^2.3.1",
+    "jspdf-autotable": "^3.5.13",
+    "lodash.orderby": "^4.6.0",
+    "lorem-ipsum": "^2.0.3",
+    "react": "17.0.2",
+    "react-csv": "^2.0.3",
+    "react-dom": "17.0.2",
+    "react-query": "^3.39.3",
+    "react-redux": "^7.2.0",
+    "react-to-print": "^2.12.6"
+  },
+  "peerDependencies": {
+    "react": "^16.8.3 || ^17.0.0-0 || ^18.0.0-0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:all": "react-scripts test --watchAll",
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
+    "eject": "react-scripts eject",
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "lint:fix": "tslint --fix -c tslint.json 'src/**/*.{ts,tsx}'",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
+    "dist": "tsc --declaration --jsx react --esModuleInterop true --outDir dist src/lib/index.ts && gulp build",
+    "pack": "gulp build && cd dist && npm pack && cd ..",
+    "compile": "tsc src/lib/index.ts --jsx react --esModuleInterop true --outDir dist --declaration true --target es5 && gulp compile"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "import/no-anonymous-default-export": "off"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "25.1.4",
+    "@types/lodash.orderby": "^4.6.7",
+    "@types/node": "13.9.2",
+    "@types/react-dom": "17.0.6",
+    "@types/react-highlight": "^0.12.2",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/simulant": "^0.2.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
+    "coveralls": "^3.0.11",
+    "enzyme": "^3.11.0",
+    "gh-pages": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-file": "^0.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^5.1.0",
+    "jsonfile": "^6.0.1",
+    "react-filter-control": "^2.1.0",
+    "react-ga": "^3.3.1",
+    "react-highlight": "^0.14.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.54.4",
+    "simulant": "^0.2.2",
+    "tslint": "^6.1.0",
+    "typescript": "~3.7.2"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/lib/Components/**/*.{ts,tsx}",
+      "src/lib/Utils/*.ts"
+    ]
+  },
+  "keywords": [
+    "datagrid",
+    "ts",
+    "js",
+    "javascript",
+    "typescript",
+    "datatable",
+    "ui-component",
+    "react",
+    "table",
+    "component",
+    "widget"
+  ]
+}
