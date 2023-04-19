@@ -15,6 +15,7 @@ import { ILoadingProps } from '../../props';
 import { TableControlled } from '../TableControlled/TableControlled';
 import { TableUncontrolled } from '../TableUncontrolled/TableUncontrolled';
 import { VirtualScrolling } from '../../Models/VirtualScrolling';
+import '../../style.css';
 
 type ActionCreators = typeof actionCreators;
 export interface ITableInstance extends ActionCreators {

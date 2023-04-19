@@ -1,6 +1,6 @@
-import { Table } from '@pets-mono-repo/ka-table';
 import React from 'react';
-import { DataType, EditingMode, SortingMode } from '@pets-mono-repo/ka-table/enums';
+import { Table } from '@pets-mono-repo/ka-table';
+import { DataType, EditingMode, SortingMode } from '@pets-mono-repo/ka-table';
 
 
 const dataArray = Array(10).fill(undefined).map(
@@ -12,7 +12,6 @@ const dataArray = Array(10).fill(undefined).map(
     id: index,
   }),
 );
-
 
 const OverviewDemo: React.FC = () => {
   return (
@@ -30,5 +29,7 @@ const OverviewDemo: React.FC = () => {
     />
   );
 };
+
+
 
 export default OverviewDemo;
