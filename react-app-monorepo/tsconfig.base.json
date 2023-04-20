@@ -15,7 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@pets-mono-repo/awesome-button": ["libs/awesome-button/src/index.ts"],
       "@pets-mono-repo/ka-table": ["libs/ka-table/src/lib/index.ts"],
       "@pets-mono-repo/pet-toys": ["libs/pet-toys/src/index.ts"]
     }
