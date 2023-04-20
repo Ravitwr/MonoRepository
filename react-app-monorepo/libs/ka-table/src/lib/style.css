@@ -18,6 +18,12 @@
   border-collapse: collapse;
 }
 
+.ka-table-sample {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
 .ka-thead-background {
   background-color: #F1F5F7;
 }
