@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { EditingMode, FilteringMode, SortingMode, DataType, Table  } from '@pets-mono-repo/ka-table';
-
+import { AwesomeButton } from '@pets-mono-repo/awesome-button';
 const data = [
   { treeGroupId: null, id: 1, name: 'Department A', productivity: 5 },
   { treeGroupId: 1, id: 2, name: 'Mike Wazowski', productivity: 2 },

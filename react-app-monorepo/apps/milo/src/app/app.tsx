@@ -1,5 +1,6 @@
 import './app.scss';
 import { PetToys } from '@pets-mono-repo/pet-toys';
+import { AwesomeButton } from '@pets-mono-repo/awesome-button';
 
 export function App() {
   const miloToys = ['Ball', 'Socks', 'Stuffed Hedgehog', 'Frisbee', 'Stuffed Dino']
